@@ -1,0 +1,92 @@
+#!/bin/bash
+#script to compile with predefined directives
+cd ../../bfs
+rm bfs_gpu
+make release_gpu PARA="-DWORK_GROUP=1"
+cd ../energywrap/ocl
+./main_gpu	../../../data/bfs/graph65536.txt >> output/bfs/GPU/graph65536_1.log
+./main_gpu	../../../data/bfs/graph65536.txt >> output/bfs/GPU/graph65536_2.log
+./main_gpu	../../../data/bfs/graph65536.txt >> output/bfs/GPU/graph65536_3.log
+./main_gpu	../../../data/bfs/graph1MW_6.txt >> output/bfs/GPU/graph1MW_6_1.log
+./main_gpu	../../../data/bfs/graph1MW_6.txt >> output/bfs/GPU/graph1MW_6_2.log
+./main_gpu	../../../data/bfs/graph1MW_6.txt >> output/bfs/GPU/graph1MW_6_3.log
+cd ../../bfs
+rm bfs_gpu
+make release_gpu PARA="-DWORK_GROUP=2"
+cd ../energywrap/ocl
+./main_gpu	../../../data/bfs/graph65536.txt >> output/bfs/GPU/graph65536_1.log
+./main_gpu	../../../data/bfs/graph65536.txt >> output/bfs/GPU/graph65536_2.log
+./main_gpu	../../../data/bfs/graph65536.txt >> output/bfs/GPU/graph65536_3.log
+./main_gpu	../../../data/bfs/graph1MW_6.txt >> output/bfs/GPU/graph1MW_6_1.log
+./main_gpu	../../../data/bfs/graph1MW_6.txt >> output/bfs/GPU/graph1MW_6_2.log
+./main_gpu	../../../data/bfs/graph1MW_6.txt >> output/bfs/GPU/graph1MW_6_3.log
+cd ../../bfs
+rm bfs_gpu
+make release_gpu PARA="-DWORK_GROUP=4"
+cd ../energywrap/ocl
+./main_gpu	../../../data/bfs/graph65536.txt >> output/bfs/GPU/graph65536_1.log
+./main_gpu	../../../data/bfs/graph65536.txt >> output/bfs/GPU/graph65536_2.log
+./main_gpu	../../../data/bfs/graph65536.txt >> output/bfs/GPU/graph65536_3.log
+./main_gpu	../../../data/bfs/graph1MW_6.txt >> output/bfs/GPU/graph1MW_6_1.log
+./main_gpu	../../../data/bfs/graph1MW_6.txt >> output/bfs/GPU/graph1MW_6_2.log
+./main_gpu	../../../data/bfs/graph1MW_6.txt >> output/bfs/GPU/graph1MW_6_3.log
+cd ../../bfs
+rm bfs_gpu
+make release_gpu PARA="-DWORK_GROUP=8"
+cd ../energywrap/ocl
+./main_gpu	../../../data/bfs/graph65536.txt >> output/bfs/GPU/graph65536_1.log
+./main_gpu	../../../data/bfs/graph65536.txt >> output/bfs/GPU/graph65536_2.log
+./main_gpu	../../../data/bfs/graph65536.txt >> output/bfs/GPU/graph65536_3.log
+./main_gpu	../../../data/bfs/graph1MW_6.txt >> output/bfs/GPU/graph1MW_6_1.log
+./main_gpu	../../../data/bfs/graph1MW_6.txt >> output/bfs/GPU/graph1MW_6_2.log
+./main_gpu	../../../data/bfs/graph1MW_6.txt >> output/bfs/GPU/graph1MW_6_3.log
+cd ../../bfs
+rm bfs_gpu
+make release_gpu PARA="-DWORK_GROUP=16"
+cd ../energywrap/ocl
+./main_gpu	../../../data/bfs/graph65536.txt >> output/bfs/GPU/graph65536_1.log
+./main_gpu	../../../data/bfs/graph65536.txt >> output/bfs/GPU/graph65536_2.log
+./main_gpu	../../../data/bfs/graph65536.txt >> output/bfs/GPU/graph65536_3.log
+./main_gpu	../../../data/bfs/graph1MW_6.txt >> output/bfs/GPU/graph1MW_6_1.log
+./main_gpu	../../../data/bfs/graph1MW_6.txt >> output/bfs/GPU/graph1MW_6_2.log
+./main_gpu	../../../data/bfs/graph1MW_6.txt >> output/bfs/GPU/graph1MW_6_3.log
+cd ../../bfs
+rm bfs_gpu
+make release_gpu PARA="-DWORK_GROUP=32"
+cd ../energywrap/ocl
+./main_gpu	../../../data/bfs/graph65536.txt >> output/bfs/GPU/graph65536_1.log
+./main_gpu	../../../data/bfs/graph65536.txt >> output/bfs/GPU/graph65536_2.log
+./main_gpu	../../../data/bfs/graph65536.txt >> output/bfs/GPU/graph65536_3.log
+./main_gpu	../../../data/bfs/graph1MW_6.txt >> output/bfs/GPU/graph1MW_6_1.log
+./main_gpu	../../../data/bfs/graph1MW_6.txt >> output/bfs/GPU/graph1MW_6_2.log
+./main_gpu	../../../data/bfs/graph1MW_6.txt >> output/bfs/GPU/graph1MW_6_3.log
+cd ../../bfs
+rm bfs_gpu
+make release_gpu PARA="-DWORK_GROUP=64"
+cd ../energywrap/ocl
+./main_gpu	../../../data/bfs/graph65536.txt >> output/bfs/GPU/graph65536_1.log
+./main_gpu	../../../data/bfs/graph65536.txt >> output/bfs/GPU/graph65536_2.log
+./main_gpu	../../../data/bfs/graph65536.txt >> output/bfs/GPU/graph65536_3.log
+./main_gpu	../../../data/bfs/graph1MW_6.txt >> output/bfs/GPU/graph1MW_6_1.log
+./main_gpu	../../../data/bfs/graph1MW_6.txt >> output/bfs/GPU/graph1MW_6_2.log
+./main_gpu	../../../data/bfs/graph1MW_6.txt >> output/bfs/GPU/graph1MW_6_3.log
+cd ../../bfs
+rm bfs_gpu
+make release_gpu PARA="-DWORK_GROUP=128"
+cd ../energywrap/ocl
+./main_gpu	../../../data/bfs/graph65536.txt >> output/bfs/GPU/graph65536_1.log
+./main_gpu	../../../data/bfs/graph65536.txt >> output/bfs/GPU/graph65536_2.log
+./main_gpu	../../../data/bfs/graph65536.txt >> output/bfs/GPU/graph65536_3.log
+./main_gpu	../../../data/bfs/graph1MW_6.txt >> output/bfs/GPU/graph1MW_6_1.log
+./main_gpu	../../../data/bfs/graph1MW_6.txt >> output/bfs/GPU/graph1MW_6_2.log
+./main_gpu	../../../data/bfs/graph1MW_6.txt >> output/bfs/GPU/graph1MW_6_3.log
+cd ../../bfs
+rm bfs_gpu
+make release_gpu PARA="-DWORK_GROUP=256"
+cd ../energywrap/ocl
+./main_gpu	../../../data/bfs/graph65536.txt >> output/bfs/GPU/graph65536_1.log
+./main_gpu	../../../data/bfs/graph65536.txt >> output/bfs/GPU/graph65536_2.log
+./main_gpu	../../../data/bfs/graph65536.txt >> output/bfs/GPU/graph65536_3.log
+./main_gpu	../../../data/bfs/graph1MW_6.txt >> output/bfs/GPU/graph1MW_6_1.log
+./main_gpu	../../../data/bfs/graph1MW_6.txt >> output/bfs/GPU/graph1MW_6_2.log
+./main_gpu	../../../data/bfs/graph1MW_6.txt >> output/bfs/GPU/graph1MW_6_3.log

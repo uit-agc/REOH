@@ -1,0 +1,6 @@
+*.o
+*_cpu
+*_gpu
+inpuGen
+inputGen
+out.txt
