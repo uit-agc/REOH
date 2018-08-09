@@ -5,7 +5,7 @@
 - GNU Awk 4.0.2
 - Linux 3.10.0
 
-** Note: These are proof-of-concept scripts glued together into one script (run.sh)
+** Note: These are proof-of-concept scripts combined into one script (run.sh)
 
 ** SYNOPSIS: run.sh  <app_exe_loc> <app_exe_basename> <app_arg> <bench_name>
 
@@ -18,11 +18,12 @@ $ ./run.sh rodinia_3.1/opencl/bfs/ bfs "../../data/bfs/inputGen/graph512k.txt" b
 $ ./run.sh rodinia_3.1/opencl/cfd/ cfd "../../data/cfd/fvcorr.domn.097K" cfd_fvcorr_097k  
 
 ** Prerequisites:
-1. Training data
-- Created through energywrapper in rhodinia folder.
+1. Training data 
+- Created through energywrapper in Rodinia folder (./rodinia_3.1/opencl/energywrapper).
+- Traning data for the considered system is stored in REOH/Data/train
 2. Two versions of an executable with postfix {_cpu, _gpu}
  - leo_fmt.sh can be used to format the training data for leo (EM framework).
-2. ./ConfigList.txt must correspond to X.txt in training data.
+2. ./ConfigList.txt is the list of all configurations (i.e., 393 configurations for the considered system) 
  - Sample ConfigList.txt included
 3. Static energy measurements are hardcoded into leo_fmt.sh and run_test.sh
 
