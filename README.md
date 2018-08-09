@@ -23,8 +23,8 @@ $ ./run.sh rodinia_3.1/opencl/cfd/ cfd "../../data/cfd/fvcorr.domn.097K" cfd_fvc
 - Traning data for the considered system is stored in REOH/Data/train
 2. Two versions of an executable with postfix {_cpu, _gpu}
  - leo_fmt.sh can be used to format the training data for leo (EM framework).
-2. ./ConfigList.txt is the list of all configurations (i.e., 393 configurations for the considered system) 
- - Sample ConfigList.txt included
+2. ConfigList.txt is the list of all configurations (i.e., 393 configurations for the considered system) 
+ - Sample ConfigList.txt included in ./Data/train/ConfigList.txt
 3. Static energy measurements are hardcoded into leo_fmt.sh and run_test.sh
 
 ** Description:
