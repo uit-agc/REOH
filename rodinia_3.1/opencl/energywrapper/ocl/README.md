@@ -1,6 +1,6 @@
 Training phase:
 $ run_all.sh # runs training scripts {new_cpu.sh, new_gpu.sh} -> makes energywrapper/ocl/output
-Training scripts are coded to run 389 permutations with different configurations of freqind, memctrl, ncpus, and WG sizes for GPUs - using different training sets.
+Training scripts are coded to run 393 different configurations (i.e., the combinations of freqind, memctrl, ncpus or WG sizes for GPUs).
 The scripts take no arguments, users may add or remove configs/inputs as they see fit.
 
 Formaters:
