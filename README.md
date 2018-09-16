@@ -30,4 +30,4 @@ $ ./run.sh rodinia_3.1/opencl/cfd/ cfd "../../data/cfd/fvcorr.domn.097K" cfd_fvc
 ** Description:
  - Configurations for testing phases can be modified in run_test.sh
 
-run.sh will based on a sample configuration run a test for a specific application that has a gpu and a cpu executable. The outputs of this test will be stored in ./Data/test. Next it will run the EM framework on the output of the test phase. Finally it will take the configuration given by the EM framework and run the best configuration
+run.sh will based on a sample configuration run a test for a specific application that has a gpu and a cpu executable. The outputs of this test will be stored in ./Data/test. Next it will run the REOH framework on the output of the test phase. Finally it will take the configuration given by the REOH framework and run the best configuration.
